@@ -1,0 +1,30 @@
+version: "3.8"
+
+services:
+  gitlocalize:
+    build: ./gitlocalize
+    image: ovos-benchmarks/gitlocalize
+    container_name: gitlocalize-bench
+    ports:
+      - "8501:8501"  # Adjust as needed
+
+  meteocat:
+    build: ./meteocat
+    image: ovos-benchmarks/meteocat
+    container_name: meteocat-bench
+    ports:
+      - "8502:8501"  # Adjust as needed
+
+  stt:
+    build: ./stt
+    image: ovos-benchmarks/stt
+    container_name: stt-bench
+    ports:
+      - "8503:8501"  # Adjust as needed
+
+  tts:
+    build: ./tts
+    image: ovos-benchmarks/tts
+    container_name: tts-bench
+    ports:
+      - "8504:8501"  # Adjust as needed

@@ -1,0 +1,6 @@
+pandas
+sqlalchemy
+streamlit
+jiwer
+rapidfuzz
+json-database
